@@ -55,14 +55,15 @@ printf 'Done\n'
 
 # configure powerlevel10k
 printf '[+] Configuring powerlevel10k theme... '
-zsh -c "printf 'y\ny\ny\ny\n3\n1\n2\n3\n3\n4\n2\n1\n3\n3\n2\n1\n1\ny\n1\ny' | source $ZSH_CUSTOM/themes/powerlevel10k/prompt_powerlevel10k_setup" &>/dev/null
+zsh -c "source $ZSH_CUSTOM/themes/powerlevel10k/prompt_powerlevel10k_setup" &>/dev/null
 printf 'Done\n'
 
 rm -rf /tmp/config
 
 clear
 chown $USER:$USER $HOME/.zshrc
-echo 'Run zsh now.'
+echo 'Next steps:'
+echo '- Type "zsh" in order to configure powerlevel10k theme.'
 echo "- Change Kali main theme to Solarized Dark"
 echo "- Install FiraCode NF font from:"
 echo "  https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip"
